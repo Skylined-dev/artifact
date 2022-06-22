@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class ResistanceArtifact extends Item{
 
-    public static final Item RESISTANCE_ARTIFACT = new Item(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
+    public static final Item RESISTANCE_ARTIFACT = new ResistanceArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
 
     public ResistanceArtifact(Settings settings) {
         super(settings);

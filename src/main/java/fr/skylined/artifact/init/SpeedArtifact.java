@@ -15,8 +15,7 @@ public class SpeedArtifact extends Item {
         super(settings);
     }
 
-    public static final Item SPEED_ARTIFACT = new Item(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
-
+    public static final Item SPEED_ARTIFACT = new SpeedArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(entity instanceof PlayerEntity player){
