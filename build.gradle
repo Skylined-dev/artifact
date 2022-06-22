@@ -8,7 +8,7 @@ targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = 'Artifact'
 version = 1.0
-group = fr.skylined.artifact
+group = 'fr.skylined.artifact'
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
