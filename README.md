@@ -8,4 +8,8 @@ Artifact is a Fabric based mod for Minecraft 1.19 that add a few artifact that g
 
 Skylined
 
+## Contact
 
+### Discord :
+
+Skylined#3826
