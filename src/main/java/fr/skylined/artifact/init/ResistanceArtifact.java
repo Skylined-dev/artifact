@@ -20,7 +20,7 @@ public class ResistanceArtifact extends Item{
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(entity instanceof PlayerEntity player){
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,100, 0));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,100, 0, false, false));
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }

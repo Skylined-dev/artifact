@@ -2,6 +2,7 @@ package fr.skylined.artifact;
 
 import fr.skylined.artifact.init.ResistanceArtifact;
 import fr.skylined.artifact.init.SpeedArtifact;
+import fr.skylined.artifact.init.StrengthArtifact;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -23,5 +24,7 @@ public class ARTIFACT implements ModInitializer {
         System.out.println("Artifact is on!");
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "speed_artifact"), SpeedArtifact.SPEED_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact"), ResistanceArtifact.RESISTANCE_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact"), StrengthArtifact.STRENGTH_ARTIFACT);
+
     }
 }
