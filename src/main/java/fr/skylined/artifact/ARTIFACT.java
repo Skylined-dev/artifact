@@ -1,5 +1,6 @@
 package fr.skylined.artifact;
 
+import fr.skylined.artifact.init.RandomArtifact;
 import fr.skylined.artifact.init.ResistanceArtifact;
 import fr.skylined.artifact.init.SpeedArtifact;
 import fr.skylined.artifact.init.StrengthArtifact;
@@ -25,6 +26,8 @@ public class ARTIFACT implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "speed_artifact"), SpeedArtifact.SPEED_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact"), ResistanceArtifact.RESISTANCE_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact"), StrengthArtifact.STRENGTH_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "random_artifact"), RandomArtifact.RANDOM_ARTIFACT);
+
 
     }
 }

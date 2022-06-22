@@ -2,5 +2,6 @@
   "item.artifact.speed_artifact": "Speed Artifact",
   "item.artifact.resistance_artifact": "Resistance Artifact",
   "item.artifact.strength_artifact": "Strength Artifact",
+  "item.artifact.random_artifact": "Random Artifact",
   "itemGroup.artifact.artifact_group": "Artifact"
 }

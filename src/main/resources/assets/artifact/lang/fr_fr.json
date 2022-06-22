@@ -2,5 +2,6 @@
   "item.artifact.speed_artifact": "Artéfact de vitesse",
   "item.artifact.resistance_artifact": "Artéfact de résistance",
   "item.artifact.strength_artifact": "Artéfact de force",
+  "item.artifact.random_artifact": "Artéfact Aléatoire",
   "itemGroup.artifact.artifact_group": "Artéfact"
 }
