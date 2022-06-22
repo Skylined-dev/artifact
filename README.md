@@ -1,9 +1,11 @@
-# Fabric Example Mod
+# Artifact
 
-## Setup
+## Description
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Artifact is a Fabric based mod for Minecraft 1.19 that add a few artifact that give you potion effect when you hold it in your inventory.
 
-## License
+## Author
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Skylined
+
+
