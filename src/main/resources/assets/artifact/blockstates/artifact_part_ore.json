@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "artifact:block/artifact_part_ore"
+    }
+  }
+}

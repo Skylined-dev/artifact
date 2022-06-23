@@ -1,11 +1,10 @@
 package fr.skylined.artifact;
 
-import fr.skylined.artifact.init.RandomArtifact;
-import fr.skylined.artifact.init.ResistanceArtifact;
-import fr.skylined.artifact.init.SpeedArtifact;
-import fr.skylined.artifact.init.StrengthArtifact;
+import fr.skylined.artifact.init.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -27,7 +26,12 @@ public class ARTIFACT implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact"), ResistanceArtifact.RESISTANCE_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact"), StrengthArtifact.STRENGTH_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "random_artifact"), RandomArtifact.RANDOM_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "artifact_part"), ArtifactPart.ARTIFACT_PART);
 
+        //Artifact ore
+        Registry.register(Registry.BLOCK, new Identifier(ARTIFACT.MODID, "artifact_part_ore"), ArtifactPart.ARTIFACT_PART_ORE);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "artifact_part_ore"), new BlockItem(ArtifactPart.ARTIFACT_PART_ORE, new FabricItemSettings().group(ARTIFACT.ARTIFACT_GROUP)));
+        //
 
     }
 }
