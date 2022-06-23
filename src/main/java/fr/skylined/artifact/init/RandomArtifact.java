@@ -1,7 +1,9 @@
 package fr.skylined.artifact.init;
 
 import fr.skylined.artifact.ARTIFACT;
+import net.minecraft.block.Material;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -37,20 +39,26 @@ public class RandomArtifact extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if(world.isClient()){
+        if(!world.isClient()){
             int itemNum = getRandomNumber(1, 4);
             assert user != null;
+            user.getInventory().removeStack(user.getInventory().selectedSlot);
             if(itemNum == 1){
                 ItemStack speedArtifact = new ItemStack(SpeedArtifact.SPEED_ARTIFACT);
-                user.getInventory().setStack(user.getInventory().selectedSlot, speedArtifact);
+                //user.getInventory().setStack(user.getInventory().selectedSlot, speedArtifact);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, speedArtifact);
                 user.getInventory().updateItems();
             }else if(itemNum == 2){
                 ItemStack resistanceArtifact = new ItemStack(ResistanceArtifact.RESISTANCE_ARTIFACT);
-                user.getInventory().setStack(user.getInventory().selectedSlot, resistanceArtifact);
+                //user.getInventory().setStack(user.getInventory().selectedSlot, resistanceArtifact);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, resistanceArtifact);
+
                 user.getInventory().updateItems();
             } else if (itemNum == 3) {
                 ItemStack strengthArtifact = new ItemStack(StrengthArtifact.STRENGTH_ARTIFACT);
-                user.getInventory().setStack(user.getInventory().selectedSlot, strengthArtifact);
+                //user.getInventory().setStack(user.getInventory().selectedSlot, strengthArtifact);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, strengthArtifact);
+
                 user.getInventory().updateItems();
             }
         }

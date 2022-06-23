@@ -18,9 +18,12 @@ public class SpeedArtifact extends Item {
     public static final Item SPEED_ARTIFACT = new SpeedArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if(entity instanceof PlayerEntity player){
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,100, 0, false, false));
+        if(!world.isClient()){
+            if(entity instanceof PlayerEntity player){
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,100, 0, false, false));
+            }
         }
+
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 }
