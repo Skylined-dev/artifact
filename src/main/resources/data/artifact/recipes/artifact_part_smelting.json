@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "cookingtime": 200,
-  "experience": 0.7,
+  "experience": 1,
   "group": "artifact",
   "ingredient": {
     "item": "artifact:artifact_part_ore"

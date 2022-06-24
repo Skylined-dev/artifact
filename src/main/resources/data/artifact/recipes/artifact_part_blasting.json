@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "cookingtime": 100,
-  "experience": 1.3,
+  "experience": 1,
   "group": "artifact",
   "ingredient": {
     "item": "artifact:artifact_part_ore"
