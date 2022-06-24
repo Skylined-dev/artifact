@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "artifact:artifact_part"
+    }
+  },
+  "result": {
+    "item": "artifact:random_artifact"
+  }
+}

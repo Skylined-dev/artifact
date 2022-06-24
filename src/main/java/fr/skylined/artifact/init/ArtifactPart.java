@@ -13,7 +13,7 @@ import javax.tools.Tool;
 
 public class ArtifactPart{
 
-    public static final Block ARTIFACT_PART_ORE = new OreBlock(FabricBlockSettings.of(Material.STONE).strength(1f).requiresTool(), UniformIntProvider.create(3,7));
+    public static final Block ARTIFACT_PART_ORE = new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f,6f).requiresTool(), UniformIntProvider.create(3,7));
     public static final Item ARTIFACT_PART = new Item(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(64));
 
 }
