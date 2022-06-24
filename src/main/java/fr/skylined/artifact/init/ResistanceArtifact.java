@@ -21,7 +21,7 @@ public class ResistanceArtifact extends Item{
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()){
             if(entity instanceof PlayerEntity player){
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,100, 0, false, false));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,25, 0, false, false));
             }
         }
 

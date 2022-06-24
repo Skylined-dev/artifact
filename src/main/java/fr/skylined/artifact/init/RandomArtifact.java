@@ -17,30 +17,10 @@ public class RandomArtifact extends Item {
 
     public static final Item RANDOM_ARTIFACT = new RandomArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
 
-    //@Override
-    //public ActionResult useOnBlock(ItemUsageContext context) {
-    //    if(context.getWorld().isClient()){
-    //        PlayerEntity player = context.getPlayer();
-    //       int itemNum = getRandomNumber(1, 4);
-    //        assert player != null;
-    //        if(itemNum == 1){
-    //            ItemStack speedArtifact = new ItemStack(SpeedArtifact.SPEED_ARTIFACT);
-    //            player.getInventory().setStack(player.getInventory().selectedSlot, speedArtifact);
-    //        }else if(itemNum == 2){
-    //           ItemStack resistanceArtifact = new ItemStack(ResistanceArtifact.RESISTANCE_ARTIFACT);
-    //            player.getInventory().setStack(player.getInventory().selectedSlot, resistanceArtifact);
-    //        } else if (itemNum == 3) {
-    //            ItemStack strengthArtifact = new ItemStack(StrengthArtifact.STRENGTH_ARTIFACT);
-    //            player.getInventory().setStack(player.getInventory().selectedSlot, strengthArtifact);
-    //        }
-    //    }
-    //    return super.useOnBlock(context);
-    //}
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if(!world.isClient()){
-            int itemNum = getRandomNumber(1, 4);
+            int itemNum = getRandomNumber(1, 5);
             assert user != null;
             user.getInventory().removeStack(user.getInventory().selectedSlot);
             if(itemNum == 1){
@@ -59,6 +39,10 @@ public class RandomArtifact extends Item {
                 //user.getInventory().setStack(user.getInventory().selectedSlot, strengthArtifact);
                 user.getInventory().insertStack(user.getInventory().selectedSlot, strengthArtifact);
 
+                user.getInventory().updateItems();
+            }else if(itemNum == 4){
+                ItemStack hasteArtifact = new ItemStack(HasteArtifact.HASTE_ARTIFACT);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, hasteArtifact);
                 user.getInventory().updateItems();
             }
         }
