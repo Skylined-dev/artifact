@@ -8,5 +8,9 @@
   "item.artifact.artifact_part": "Artifact Part",
   "item.artifact.haste_artifact": "Haste Artifact",
   "item.artifact.fire_resistance_artifact": "Fire Resistance Artifact",
-  "item.artifact.water_breathing_artifact": "Water Breathing Artifact"
+  "item.artifact.water_breathing_artifact": "Water Breathing Artifact",
+  "block.artifact.tier_two_ore": "Tier Two Ore",
+  "block.artifact.tier_three_ore": "Tier Three Ore",
+  "item.artifact.tier_two_part": "Tier Two Part",
+  "item.artifact.tier_three_part": "Tier Three Part"
 }

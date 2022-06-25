@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "artifact:block/tier_three_ore"
+    }
+  }
+}

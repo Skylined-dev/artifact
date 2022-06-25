@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "artifact:artifact_part_ore"
+    "artifact:artifact_part_ore",
+    "artifact:tier_two_ore"
   ]
 }
