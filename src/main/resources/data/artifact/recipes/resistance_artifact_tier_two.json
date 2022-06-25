@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "artifact:tier_two_part"
+    },
+    "A": {
+      "item": "artifact:resistance_artifact"
+    }
+  },
+  "result": {
+    "item": "artifact:resistance_artifact_tier_two"
+  }
+}

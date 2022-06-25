@@ -1,7 +1,7 @@
 package fr.skylined.artifact.items;
 
 import fr.skylined.artifact.ARTIFACT;
-import fr.skylined.artifact.items.artifact.*;
+import fr.skylined.artifact.items.artifact.tier1.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -46,7 +46,7 @@ public class RandomArtifact extends Item {
                 user.getInventory().insertStack(user.getInventory().selectedSlot, hasteArtifact);
                 user.getInventory().updateItems();
             } else if (itemNum == 5) {
-                ItemStack waterBreathingArtifact = new ItemStack(WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
+                ItemStack waterBreathingArtifact = new ItemStack(WaterBreathingArtifact.WATER_BEATHING_ARTIFACT);
                 user.getInventory().insertStack(user.getInventory().selectedSlot, waterBreathingArtifact);
                 user.getInventory().updateItems();
             } else if (itemNum == 6) {

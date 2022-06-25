@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "artifact:item/strength_artifact_tier_two"
+  }
+}

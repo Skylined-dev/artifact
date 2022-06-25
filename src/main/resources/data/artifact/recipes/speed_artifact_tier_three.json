@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "artifact:tier_three_part"
+    },
+    "A": {
+      "item": "artifact:speed_artifact_tier_two"
+    }
+  },
+  "result": {
+    "item": "artifact:speed_artifact_tier_three"
+  }
+}

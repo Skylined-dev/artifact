@@ -1,7 +1,15 @@
 package fr.skylined.artifact;
 
 import fr.skylined.artifact.items.*;
-import fr.skylined.artifact.items.artifact.*;
+import fr.skylined.artifact.items.artifact.tier1.*;
+import fr.skylined.artifact.items.artifact.tier2.HasteArtifactTier2;
+import fr.skylined.artifact.items.artifact.tier2.ResistanceArtifactTier2;
+import fr.skylined.artifact.items.artifact.tier2.SpeedArtifactTier2;
+import fr.skylined.artifact.items.artifact.tier2.StrengthArtifactTier2;
+import fr.skylined.artifact.items.artifact.tier3.HasteArtifactTier3;
+import fr.skylined.artifact.items.artifact.tier3.ResistanceArtifactTier3;
+import fr.skylined.artifact.items.artifact.tier3.SpeedArtifactTier3;
+import fr.skylined.artifact.items.artifact.tier3.StrengthArtifactTier3;
 import fr.skylined.artifact.world.gen.ArtifactPartOreGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -31,16 +39,32 @@ public class ARTIFACT implements ModInitializer {
     public void onInitialize() {
         System.out.println("Artifact is on!");
         System.out.println("Registering Items...");
+        System.out.println("Tier 1...");
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "speed_artifact"), SpeedArtifact.SPEED_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact"), ResistanceArtifact.RESISTANCE_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact"), StrengthArtifact.STRENGTH_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "haste_artifact"), HasteArtifact.HASTE_ARTIFACT);
-        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "water_breathing_artifact"), WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "water_breathing_artifact"), WaterBreathingArtifact.WATER_BEATHING_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "fire_resistance_artifact"), FireResistanceArtifact.FIRE_RESISTANCE_ARTIFACT);
+        System.out.println("Tier 2...");
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "speed_artifact_tier_two"), SpeedArtifactTier2.SPEED_ARTIFACT_TIER_2);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact_tier_two"), ResistanceArtifactTier2.RESISTANCE_ARTIFACT_TIER_2);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact_tier_two"), StrengthArtifactTier2.STRENGTH_ARTIFACT_TIER_2);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "haste_artifact_tier_two"), HasteArtifactTier2.HASTE_ARTIFACT_TIER_2);
+        System.out.println("Tier 3...");
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "speed_artifact_tier_three"), SpeedArtifactTier3.SPEED_ARTIFACT_TIER_3);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "resistance_artifact_tier_three"), ResistanceArtifactTier3.RESISTANCE_ARTIFACT_TIER_3);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "strength_artifact_tier_three"), StrengthArtifactTier3.STRENGTH_ARTIFACT_TIER_3);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "haste_artifact_tier_three"), HasteArtifactTier3.HASTE_ARTIFACT_TIER_3);
+        System.out.println("SUCCES!");
+
+        System.out.println("Registering Misc...");
+        //Misc
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "random_artifact"), RandomArtifact.RANDOM_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "artifact_part"), ArtifactPart.ARTIFACT_PART);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "tier_two_part"), ArtifactPart.TIER_TWO_PART);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "tier_three_part"), ArtifactPart.TIER_THREE_PART);
+        //
         System.out.println("SUCCES!");
 
         System.out.println("Registering Ores...");

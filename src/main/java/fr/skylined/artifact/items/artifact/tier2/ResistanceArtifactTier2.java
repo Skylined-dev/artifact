@@ -1,4 +1,4 @@
-package fr.skylined.artifact.items.artifact;
+package fr.skylined.artifact.items.artifact.tier2;
 
 import fr.skylined.artifact.ARTIFACT;
 import net.minecraft.entity.Entity;
@@ -9,18 +9,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ResistanceArtifact extends Item{
+public class ResistanceArtifactTier2 extends Item{
 
-    public static final Item RESISTANCE_ARTIFACT = new ResistanceArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
+    public static final Item RESISTANCE_ARTIFACT_TIER_2 = new ResistanceArtifactTier2(new Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
 
-    public ResistanceArtifact(Settings settings) {
+    public ResistanceArtifactTier2(Settings settings) {
         super(settings);
     }
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()){
             if(entity instanceof PlayerEntity player){
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,10, 0, false, false));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,10, 1, false, false));
             }
         }
 
