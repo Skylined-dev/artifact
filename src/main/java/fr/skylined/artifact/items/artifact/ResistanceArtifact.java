@@ -1,4 +1,4 @@
-package fr.skylined.artifact.init;
+package fr.skylined.artifact.items.artifact;
 
 import fr.skylined.artifact.ARTIFACT;
 import net.minecraft.entity.Entity;
@@ -9,20 +9,21 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class StrengthArtifact extends Item {
-    public StrengthArtifact(Settings settings) {
+public class ResistanceArtifact extends Item{
+
+    public static final Item RESISTANCE_ARTIFACT = new ResistanceArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
+
+    public ResistanceArtifact(Settings settings) {
         super(settings);
     }
-
-    public static final Item STRENGTH_ARTIFACT = new StrengthArtifact(new Item.Settings().group(ARTIFACT.ARTIFACT_GROUP).maxCount(1));
-
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()){
             if(entity instanceof PlayerEntity player){
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 25, 0, false, false));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,10, 0, false, false));
             }
         }
+
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 }

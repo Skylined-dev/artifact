@@ -1,9 +1,8 @@
-package fr.skylined.artifact.init;
+package fr.skylined.artifact.items;
 
 import fr.skylined.artifact.ARTIFACT;
-import net.minecraft.block.Material;
+import fr.skylined.artifact.items.artifact.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -11,6 +10,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 public class RandomArtifact extends Item {
+    private int min;
+
     public RandomArtifact(Settings settings) {
         super(settings);
     }
@@ -20,7 +21,7 @@ public class RandomArtifact extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if(!world.isClient()){
-            int itemNum = getRandomNumber(1, 5);
+            int itemNum = getRandomNumber(1, 7);
             assert user != null;
             user.getInventory().removeStack(user.getInventory().selectedSlot);
             if(itemNum == 1){
@@ -44,12 +45,25 @@ public class RandomArtifact extends Item {
                 ItemStack hasteArtifact = new ItemStack(HasteArtifact.HASTE_ARTIFACT);
                 user.getInventory().insertStack(user.getInventory().selectedSlot, hasteArtifact);
                 user.getInventory().updateItems();
+            } else if (itemNum == 5) {
+                ItemStack waterBreathingArtifact = new ItemStack(WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, waterBreathingArtifact);
+                user.getInventory().updateItems();
+            } else if (itemNum == 6) {
+                ItemStack fireResistanceArtifact = new ItemStack(FireResistanceArtifact.FIRE_RESISTANCE_ARTIFACT);
+                user.getInventory().insertStack(user.getInventory().selectedSlot, fireResistanceArtifact);
+                user.getInventory().updateItems();
             }
         }
         return super.use(world, user, hand);
     }
 
+    private int getRandomNumber(int max) {
+        return getRandomNumber(0, max);
+    }
+
     private int getRandomNumber(int min, int max){
-        return (int) ((Math.random() * (max - min)) + min);
+        int max2 = max+1;
+        return (int) ((Math.random() * (max2 - min)) + min);
     }
 }

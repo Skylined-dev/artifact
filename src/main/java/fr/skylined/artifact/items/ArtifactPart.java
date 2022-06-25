@@ -1,4 +1,4 @@
-package fr.skylined.artifact.init;
+package fr.skylined.artifact.items;
 
 import fr.skylined.artifact.ARTIFACT;
 import net.fabricmc.fabric.api.item.v1.FabricItem;

@@ -6,5 +6,7 @@
   "itemGroup.artifact.artifact_group": "Artifact",
   "block.artifact.artifact_part_ore": "Artifact Part Ore",
   "item.artifact.artifact_part": "Artifact Part",
-  "item.artifact.haste_artifact": "Haste Artifact"
+  "item.artifact.haste_artifact": "Haste Artifact",
+  "item.artifact.fire_resistance_artifact": "Fire Resistance Artifact",
+  "item.artifat.water_breathing_artifact": "Water Breathing Artifact"
 }

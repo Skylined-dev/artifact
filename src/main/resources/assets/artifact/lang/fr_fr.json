@@ -6,5 +6,7 @@
   "itemGroup.artifact.artifact_group": "Artéfact",
   "block.artifact.artifact_part_ore": "Minerai d'artéfact",
   "item.artifact.artifact_part": "Morceau d'artéfact",
-  "item.artifact.haste_artifact": "Artéfact de célérité"
+  "item.artifact.haste_artifact": "Artéfact de célérité",
+  "item.artifact.fire_resistance_artifact": "Artéfact de résistance au feu",
+  "item.artifat.water_breathing_artifact": "Artéfact d'apnée"
 }

@@ -1,6 +1,6 @@
 package fr.skylined.artifact.world.gen;
 
-import fr.skylined.artifact.init.ArtifactPart;
+import fr.skylined.artifact.items.ArtifactPart;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;

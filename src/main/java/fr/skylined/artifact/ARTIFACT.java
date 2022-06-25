@@ -1,9 +1,9 @@
 package fr.skylined.artifact;
 
-import fr.skylined.artifact.init.*;
+import fr.skylined.artifact.items.*;
+import fr.skylined.artifact.items.artifact.*;
 import fr.skylined.artifact.world.gen.ArtifactPartOreGen;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -35,6 +35,8 @@ public class ARTIFACT implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "random_artifact"), RandomArtifact.RANDOM_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "artifact_part"), ArtifactPart.ARTIFACT_PART);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "haste_artifact"), HasteArtifact.HASTE_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "water_breathing_artifact"), WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "fire_resistance_artifact"), WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
 
         //Artifact ore
         Registry.register(Registry.BLOCK, new Identifier(ARTIFACT.MODID, "artifact_part_ore"), ArtifactPart.ARTIFACT_PART_ORE);
