@@ -36,7 +36,7 @@ public class ARTIFACT implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "artifact_part"), ArtifactPart.ARTIFACT_PART);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "haste_artifact"), HasteArtifact.HASTE_ARTIFACT);
         Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "water_breathing_artifact"), WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
-        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "fire_resistance_artifact"), WaterBreathinArtifact.WATER_BEATHING_ARTIFACT);
+        Registry.register(Registry.ITEM, new Identifier(ARTIFACT.MODID, "fire_resistance_artifact"), FireResistanceArtifact.FIRE_RESISTANCE_ARTIFACT);
 
         //Artifact ore
         Registry.register(Registry.BLOCK, new Identifier(ARTIFACT.MODID, "artifact_part_ore"), ArtifactPart.ARTIFACT_PART_ORE);

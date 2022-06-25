@@ -21,7 +21,7 @@ public class RandomArtifact extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if(!world.isClient()){
-            int itemNum = getRandomNumber(1, 7);
+            int itemNum = getRandomNumber(1, 6);
             assert user != null;
             user.getInventory().removeStack(user.getInventory().selectedSlot);
             if(itemNum == 1){
