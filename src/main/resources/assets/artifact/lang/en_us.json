@@ -12,5 +12,13 @@
   "block.artifact.tier_two_ore": "Tier Two Ore",
   "block.artifact.tier_three_ore": "Tier Three Ore",
   "item.artifact.tier_two_part": "Tier Two Part",
-  "item.artifact.tier_three_part": "Tier Three Part"
+  "item.artifact.tier_three_part": "Tier Three Part",
+  "item.artifact.speed_artifact_tier_two": "Speed Artifact Tier Two",
+  "item.artifact.speed_artifact_tier_three": "Speed Artifact Tier Three",
+  "item.artifact.strength_artifact_tier_two": "Strength Artifact Tier Two",
+  "item.artifact.strength_artifact_tier_three": "Strength Artifact Tier Three",
+  "item.artifact.resistance_artifact_tier_two": "Resistance Artifact Tier Two",
+  "item.artifact.resistance_artifact_tier_three": "Resistance Artifact Tier Three",
+  "item.artifact.haste_artifact_tier_two": "Haste Artifact Tier Two",
+  "item.artifact.haste_artifact_tier_three": "Haste Artifact Tier Three"
 }

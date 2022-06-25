@@ -12,5 +12,15 @@
   "block.artifact.tier_two_ore": "Minerai d'artéfact tier deux",
   "block.artifact.tier_three_ore": "Minerai d'artéfact tier trois",
   "item.artifact.tier_two_part": "Morceau d'artéfact tier deux",
-  "item.artifact.tier_three_part": "Morceau d'artéfact tier trois"
+  "item.artifact.tier_three_part": "Morceau d'artéfact tier trois",
+  "item.artifact.speed_artifact_tier_two": "Artéfact de vitesse tier deux",
+  "item.artifact.speed_artifact_tier_three": "Artéfact de vitesse tier trois",
+  "item.artifact.strength_artifact_tier_two": "Artéfact de force tier deux",
+  "item.artifact.strength_artifact_tier_three": "Artéfact de force tier trois",
+  "item.artifact.resistance_artifact_tier_two": "Artéfact de resistance tier deux",
+  "item.artifact.resistance_artifact_tier_three": "Artéfact de resistance tier trois",
+  "item.artifact.haste_artifact_tier_two": "Artéfact de célérité tier deux",
+  "item.artifact.haste_artifact_tier_three": "Artéfact de célérité tier trois"
+
+
 }
