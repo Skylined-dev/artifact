@@ -18,7 +18,7 @@ public class ArtifactPartOreGen {
 
     public static ConfiguredFeature<?, ?> ARTIFACT_PART_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, ArtifactPart.ARTIFACT_PART_ORE.getDefaultState(),5, 0.0f));
     public static ConfiguredFeature<?, ?> TIER_TWO_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>(Feature.ORE, new OreFeatureConfig(OreConfiguredFeatures.NETHERRACK, ArtifactPart.TIER_TWO_ORE.getDefaultState(),3, 0.0f));
-    public static ConfiguredFeature<?, ?> TIER_THREE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>(Feature.ORE, new OreFeatureConfig(END_STONE, ArtifactPart.TIER_THREE_ORE.getDefaultState(),2, 0.0f));
+    public static ConfiguredFeature<?, ?> TIER_THREE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>(Feature.ORE, new OreFeatureConfig(END_STONE, ArtifactPart.TIER_THREE_ORE.getDefaultState(),3, 0.0f));
 
     //ORE_ANCIENT_DEBRIS_LARGE = ConfiguredFeatures.register("ore_ancient_debris_large", Feature.SCATTERED_ORE, new OreFeatureConfig(BASE_STONE_NETHER, Blocks.ANCIENT_DEBRIS.getDefaultState(), 3, 1.0F));
     //ORE_NETHER_GOLD = ConfiguredFeatures.register("ore_nether_gold", Feature.ORE, new OreFeatureConfig(NETHERRACK, Blocks.NETHER_GOLD_ORE.getDefaultState(), 10));
@@ -37,7 +37,7 @@ public class ArtifactPartOreGen {
             Arrays.asList(
                     CountPlacementModifier.of(5), // number of veins per chunk
                     SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(128))
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(50))
             ));
 
     public static PlacedFeature END_TIER_THREE_ORE_PLACED_FEATURE = new PlacedFeature(
